@@ -20,8 +20,6 @@ namespace SysControlVivero.EntidadesDeNegocio
         [NotMapped]
         public int Top_Aux { get; set; }
 
-        [Required(ErrorMessage = "Especificar el número de nivel")]
-        public int Nivel { get; set; }
 
         public List<Usuario>? usuario { get; set; }
     }

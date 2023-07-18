@@ -33,7 +33,7 @@ namespace SysControlVivero.UI.AppWebAspCore.Controllers
         {
             var cliente= await clienteBL.ObtenerPorIdAsync(new Cliente { IdCliente = id });
             return View(cliente);
-        }
+        }//le quite los puntos de interrupcion
 
         // GET: ClienteController/Create
         public IActionResult Create()

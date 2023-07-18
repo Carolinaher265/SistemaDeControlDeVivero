@@ -24,7 +24,9 @@ namespace SysControlVivero.AccesoADatos
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Data Source=DESKTOP-NFDMETJ\SQLEXPRESS;Initial Catalog=ControlVivero;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+            //optionsBuilder.UseSqlServer(@"Data Source=DESKTOP-NFDMETJ\SQLEXPRESS;Initial Catalog=ControlVivero;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+
+            optionsBuilder.UseSqlServer(@"workstation id=ControlVivero123.mssql.somee.com;packet size=4096;user id=CaroHernandez_SQLLogin_1;pwd=yptvws3ruq;data source=ControlVivero123.mssql.somee.com;persist security info=False;initial catalog=ControlVivero123;Encrypt=False;TrustServerCertificate=False");
         }
     }
 
